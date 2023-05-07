@@ -1,0 +1,65 @@
+.banner{
+    .slick{
+        &-dots{
+            padding-bottom: toRem(20);
+        }
+    }
+
+    &__figure{
+        &-slider{
+            position: relative;
+
+            &::after{
+                content: "";
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                height: 40%;
+                background-image: linear-gradient(to top, rgba($color-primary, $alpha: 0.5), rgba($color-secondary, $alpha: 0.3), transparent);
+            }
+        }
+
+        &__slide{
+
+            &__block{
+                position: relative;
+                padding-top: 50%;
+                @include min-tablet{
+                    padding-top: 25%;
+                }
+    
+                &__image{
+                    @extend %full-width;
+                }
+            }
+        }
+    }
+
+    &__content{
+        &-slider{
+            margin-top: toRem(-50);
+            box-shadow: 0 5px 10px rgba($color-black, $alpha: 0.03);
+        }
+
+        &__slide__block{
+            padding: toRem(50) toRem(20);
+            text-align: center;
+        }
+    }
+
+    &__title{
+        font-size: toRem(28);
+        @include min-tablet{
+            font-size: toRem(32);
+        }
+        font-weight: 700;
+    }
+
+    &__text{
+        margin-bottom: 0;
+        @include min-tablet{
+            font-size: toRem(20);
+        }
+    }
+}

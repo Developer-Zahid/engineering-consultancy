@@ -1,6 +1,3 @@
-/* Google Fonts Link */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
-
 /* Typography Reset */
 h1,.h1,
 h2,.h2,
@@ -26,6 +23,7 @@ h5,.h5{
     font-size: toRem(12);
 }
 p{
+    color: $color-text;
     font-size: toRem(16);
     @include mobile{
         font-size: toRem(14);

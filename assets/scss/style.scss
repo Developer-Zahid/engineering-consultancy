@@ -1,19 +1,12 @@
 /* 
 ------------------
-Template Name: Name | Type
+Template Name: Engineering Consultancy | Consultancy
 Version: 1.00
 ------------------
-
-----------------
-Table of Content
-----------------
-
-1.Google Fonts Link
-2.Typography Reset
-3.Reset CSS
-
-------------------
 */
+
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
 
 @import "./abstracts/variable";
 @import "./abstracts/mixin";
@@ -24,3 +17,6 @@ Table of Content
 @import "./components/buttons";
 @import "./layout/header";
 @import "./layout/footer";
+@import "./sections/banner";
+@import "./sections/about";
+@import "./sections/service";

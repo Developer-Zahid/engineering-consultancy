@@ -20,17 +20,17 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/plugins/slick-slider/css/slick.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 <body>
 	<!-- Header Section -->
-	<header class="header w-100">
-		<nav class="navbar navbar-expand-lg">
+	<header class="header w-100 bg-white">
+		<nav class="navbar navbar-expand-sm">
 			<div class="container">
 				<a class="navbar-brand" href="./index.html">
-					<img src="./assets/images/logo.png" alt="logo" class="navbar-brand__logo">
+					<img src="./assets/images/logo/logo.png" height="50" alt="logo" class="navbar-brand__logo">
 				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false">
 					<i class="bi bi-list"></i>
 				</button>
 			
@@ -40,10 +40,10 @@
 							<a class="nav-link active" href="/">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="./services.html">Services</a>
+							<a class="nav-link" href="#!">Services</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="./partners.html">Partners</a>
+							<a class="nav-link" href="#!">Partners</a>
 						</li>
 					</ul>
 				</div>
@@ -51,21 +51,212 @@
 		</nav>
 	</header>
 	<!-- Off Canvas Menu Toggler -->
-	<div class="offCanvasMenuCloser position-fixed" data-toggle="collapse" data-target="#navbarSupportedContent" role="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></div>
+	<div class="offCanvasMenuCloser position-fixed" data-toggle="collapse" data-target="#navbarSupportedContent" role="button" aria-expanded="false"></div>
 
 	<!-- Banner Section -->
-	<h1 class="min-vh-100 text-uppercase font-weight-bold d-flex align-items-center justify-content-center mb-0">Hello World</h1>
-	<h1 class="min-vh-100 text-uppercase font-weight-bold d-flex align-items-center justify-content-center mb-0">Hello World</h1>
+	<section class="banner">
+		<div class="banner__figure-slider">
+			<div class="banner__figure__slide">
+				<div class="banner__figure__slide__block">
+					<img src="./assets/images/banners/banner-image-1.jpg" alt="banner" class="banner__figure__slide__block__image" draggable="false" >
+				</div>
+			</div>
+			<div class="banner__figure__slide">
+				<div class="banner__figure__slide__block">
+					<img src="./assets/images/banners/banner-image-2.webp" alt="banner" class="banner__figure__slide__block__image" draggable="false" loading="lazy">
+				</div>
+			</div>
+			<div class="banner__figure__slide">
+				<div class="banner__figure__slide__block">
+					<img src="./assets/images/banners/banner-image-3.jpg" alt="banner" class="banner__figure__slide__block__image" draggable="false" loading="lazy">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 mx-auto">
+					<div class="banner__content-slider bg-white">
+						<div class="banner__content__slide">
+							<div class="banner__content__slide__block">
+								<h1 class="banner__title">Extreme Wind</h1>
+								<p class="banner__text">We help clients navigate challenges and find impactful solutions within energy, climate, and infrastructure </p>
+							</div>
+						</div>
+						<div class="banner__content__slide">
+							<div class="banner__content__slide__block">
+								<h1 class="banner__title">Land Owner</h1>
+								<p class="banner__text">We help clients navigate challenges and find impactful solutions within energy, climate, and infrastructure </p>
+							</div>
+						</div>
+						<div class="banner__content__slide">
+							<div class="banner__content__slide__block">
+								<h1 class="banner__title">to +50°C</h1>
+								<p class="banner__text">We help clients navigate challenges and find impactful solutions within energy, climate, and infrastructure </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section class="about section-gap">
+		<div class="container">
+			<div class="section-header text-center">
+				<img src="./assets/images/icons/about-us.png" alt="about" width="90" height="90" class="section-header__icon" draggable="false" loading="lazy">
+				<h1 class="section-header__title">About Us</h1>
+			</div>
+			<div class="row mb-5">
+				<div class="col-lg-6">
+					<figure class="about__figure mb-0">
+						<img src="./assets/images/about/about-image-1.webp" alt="about" class="about__figure__image" draggable="false" loading="lazy">
+					</figure>
+				</div>
+				<div class="col-lg-6">
+					<div class="about__content pt-3">
+						<h2 class="about__content__title">Our Experience</h2>
+						<p class="about__content__text">Energy, climate, and infrastructure projects are all we've been focused on for the last 15 years. From the development of hundreds of MW of substations and energy projects, to analyzing the ins and outs of energy storage, renewables, hydrogen, SMRs, & fusion, to developing net-zero strategies, to building simulation and forecasting models, to serving on boards and speaking on panels, we know our stuff!</p>
+					</div>
+				</div>
+			</div>
+			<div class="row mb-5 flex-lg-row-reverse">
+				<div class="col-lg-6">
+					<figure class="about__figure mb-0">
+						<img src="./assets/images/about/about-image-2.webp" alt="about" class="about__figure__image" draggable="false" loading="lazy">
+					</figure>
+				</div>
+				<div class="col-lg-6">
+					<div class="about__content pt-3">
+						<h2 class="about__content__title">Our Approach</h2>
+						<p class="about__content__text">Our service starts with a comprehensive consultation to help identify gaps and opportunities. After we've proved our value, we follow-up with a proposal that includes a project plan with timelines and milestones, a cost analysis, and a schedule. Along the way, we provide you with interim reports and working sessions to keep you informed of the progress. That’s how we ensure your success.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<figure class="about__figure mb-0">
+						<img src="./assets/images/about/about-image-3.webp" alt="about" class="about__figure__image" draggable="false" loading="lazy">
+					</figure>
+				</div>
+				<div class="col-lg-6">
+					<div class="about__content pt-3">
+						<h2 class="about__content__title">Why Us?</h2>
+						<p class="about__content__text">We are a highly focused and attentive advisory, never taking on more than two or three clients at once depending on scope. In fact, when you reach out, we will let you know our availability and schedule for taking on new clients. Through discussions with clients, advisors, and partners, we have determined that this limited client construct makes us much more valuable in our delivery than if we took on every project that came across our radar.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Section -->
+	<section class="service section-gap">
+		<div class="container">
+			<div class="section-header text-center">
+				<img src="./assets/images/icons/services.png" alt="services" width="90" height="90" class="section-header__icon" draggable="false" loading="lazy">
+				<h1 class="section-header__title">Our Services</h1>
+			</div>
+			<div class="row">
+				<div class="col-lg-10 mx-auto">
+					<div class="row justify-content-center">
+						<div class="col-lg-4 col-md-6">
+							<div class="service-card">
+								<div class="service-card__header">
+									<div class="service-card__header__top text-center">
+										<h3 class="service-card__header__title">Construction</h3>
+										<h4 class="service-card__header__sub-title mb-0">5$ <small>/month</small></h4>
+									</div>
+									<div class="service-card__header__figure">
+										<img src="./assets/images/services/service-image-1.jpg" alt="service" class="service-card__header__figure__image" draggable="false" loading="lazy">
+									</div>
+								</div>
+								<div class="service-card__body">
+									<h2 class="service-card__body__title">Manitoba Hydro_</h2>
+									<p class="service-card__body__texr">Western Alberta Transmission Line Project is Alberta Canada’s first DC Line. For Celtic Power, this project includes the provision of specialized stringing crews to install over 130kms of quad conductor and OPGW for a newly constructed 500kV transmission line. This complex project was completed using implodes for dead end and inline splices, as well as facilitating conductor stringing by using a vast number of air support helicopters. </p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="service-card">
+								<div class="service-card__header">
+									<div class="service-card__header__top text-center">
+										<h3 class="service-card__header__title">Maintenance</h3>
+										<h4 class="service-card__header__sub-title mb-0">15$ <small>/month</small></h4>
+									</div>
+									<div class="service-card__header__figure">
+										<img src="./assets/images/services/service-image-2.jpg" alt="service" class="service-card__header__figure__image" draggable="false" loading="lazy">
+									</div>
+								</div>
+								<div class="service-card__body">
+									<h2 class="service-card__body__title">Langdon to Janet</h2>
+									<p class="service-card__body__texr">Site supervision to oversee contractors’ work, as well as performing quality assurance functions for a wide range of activities such as foundation inspections, tower assembly and erection, and conductor installation. This also includes the provision of materials management staff to assist in the procurement, logistical planning and expediting of project materials for the 1500km HVDC Transmission Line Project.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="service-card">
+								<div class="service-card__header">
+									<div class="service-card__header__top text-center">
+										<h3 class="service-card__header__title">Distribution</h3>
+										<h4 class="service-card__header__sub-title mb-0">25$ <small>/month</small></h4>
+									</div>
+									<div class="service-card__header__figure">
+										<img src="./assets/images/services/service-image-3.jpg" alt="service" class="service-card__header__figure__image" draggable="false" loading="lazy">
+									</div>
+								</div>
+								<div class="service-card__body">
+									<h2 class="service-card__body__title">Manitoba Hydro_</h2>
+									<p class="service-card__body__texr">Western Alberta Transmission Line Project is Alberta Canada’s first DC Line. For Celtic Power, this project includes the provision of specialized stringing crews to install over 130kms of quad conductor and OPGW for a newly constructed 500kV transmission line. This complex project was completed using implodes for dead end and inline splices, as well as facilitating conductor stringing by using a vast number of air support helicopters. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-center">
+				<a href="#!" class="primary-btn">View All</a>
+			</div>
+		</div>
+	</section>
 
 	<!-- Scroll To Top Button -->
 	<div class="scroll-top position-fixed">
-		<button class="scroll-top__btn border-0 d-inline-flex align-items-center justify-content-center"><i class="fas fa-chevron-up"></i></button>
+		<button class="scroll-top__btn border-0 d-inline-flex align-items-center justify-content-center"><i class="bi bi-chevron-up"></i></button>
 	</div>
 
 	<!-- All Scripts -->
 	<script src="./assets/js/jquery-1.12.4.min.js"></script>
 	<script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-	<script src="./assets/plugins/slick-slider/js/slick.js"></script>
 	<script src="./assets/js/script.js"></script>
+	<script src="./assets/plugins/slick-slider/js/slick.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			/*  Banner image slider */
+			$sliderCommonOptions = {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 4000,
+				speed: 500,
+				arrows: false,
+				fade: true,
+				cssEase: 'linear',
+				pauseOnHover: false,
+				pauseOnFocus: false,
+				infinite: true,
+			};
+			$(".banner__figure-slider").slick({
+				...$sliderCommonOptions,
+				asNavFor: '.banner__content-slider',
+				dots: false,
+			});
+			$(".banner__content-slider").slick({
+				...$sliderCommonOptions,
+				asNavFor: '.banner__figure-slider',
+				dots: true,
+			});
+		});
+	</script>
 </body>
 </html>
