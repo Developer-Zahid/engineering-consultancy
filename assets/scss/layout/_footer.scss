@@ -1,13 +1,35 @@
 /* Footer Section Style */
 .footer{
+    
+    &__top{
+        background-color: $color-footer;
+    }
+
+    &__link{
+        display: inline-block;
+        font-size: toRem(30);
+        @include min-tablet{
+            font-size: toRem(50);
+        }
+        font-weight: 300;
+        color: $color-primary;
+        word-wrap: anywhere;
+        @extend %transition;
+    }
+
+    &__address{
+        color: $color-text;
+    }
+
     &__copyright{
-        color: unset;
         font-size: toRem(14);
         &__link{
             @extend %transition;
+
             &:hover,
             &:focus{
-                color: unset;
+                color: $color-primary;
+                text-decoration: underline;
             }
         }
     }

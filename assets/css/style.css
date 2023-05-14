@@ -217,7 +217,7 @@ img {
 }
 
 /* Common Transition Style */
-.footer__copyright__link, .header .navbar .nav-link, .header .navbar-toggler, .header, .primary-btn, .slick__arrows, .slick-dots li button {
+.footer__copyright__link, .footer__link, .header .navbar .nav-link, .header .navbar-toggler, .header, .primary-btn, .slick__arrows, .slick-dots li button {
   transition: all linear 0.3s;
 }
 
@@ -231,6 +231,7 @@ img {
 
 /* Common Button's Style */
 .primary-btn {
+  display: inline-block;
   color: #ffffff;
   font-size: 1.25rem;
   font-family: "Source Sans Pro", sans-serif;
@@ -361,12 +362,30 @@ img {
 }
 
 /* Footer Section Style */
+.footer__top {
+  background-color: #f6f6f6;
+}
+.footer__link {
+  display: inline-block;
+  font-size: 1.875rem;
+  font-weight: 300;
+  color: #6FC05B;
+  word-wrap: anywhere;
+}
+@media (min-width: 768px) {
+  .footer__link {
+    font-size: 3.125rem;
+  }
+}
+.footer__address {
+  color: #5e5e5e;
+}
 .footer__copyright {
-  color: unset;
   font-size: 0.875rem;
 }
 .footer__copyright__link:hover, .footer__copyright__link:focus {
-  color: unset;
+  color: #6FC05B;
+  text-decoration: underline;
 }
 
 .banner .slick-dots {
@@ -419,6 +438,17 @@ img {
   }
 }
 
+.sub-banner {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  text-align: center;
+}
+.sub-banner__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 0.625rem;
+}
+
 .about__figure {
   position: relative;
   padding-top: 50%;
@@ -464,4 +494,7 @@ img {
 .service-card__body__title {
   font-size: 1.625rem;
   font-weight: 700;
+}
+.service-card__body__texr {
+  font-size: 0.875rem;
 }/*# sourceMappingURL=style.css.map */

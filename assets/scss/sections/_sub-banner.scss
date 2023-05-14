@@ -1,0 +1,11 @@
+.sub-banner{
+    padding-top: toRem(50);
+    padding-bottom: toRem(50);
+    text-align: center;
+
+    &__title{
+        font-size: toRem(40);
+        font-weight: 700;
+        margin-top: toRem(10);
+    }
+}
