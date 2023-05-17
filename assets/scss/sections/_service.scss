@@ -35,15 +35,19 @@
             &__figure{
                 position: relative;
                 padding-top: 100%;
+                overflow: hidden;
 
                 &__image{
                     @extend %full-width;
+                    @extend %transition;
                 }
             }
         }
 
         &__body{
-            padding: toRem(30) 0;
+            padding: toRem(30) toRem(15);
+            background-image: url('../images/icons/bg-pattern.jpg');
+            background-repeat: repeat;
 
             &__title{
                 font-size: toRem(26);
@@ -52,6 +56,13 @@
 
             &__texr{
                 font-size: toRem(14);
+            }
+        }
+
+        &:hover
+        {
+            .service-card__header__figure__image{
+                transform: scale(1.1) rotate(1deg);
             }
         }
     }

@@ -55,4 +55,7 @@
         $(this).removeClass('show');
         $("html").removeClass("overflow-hidden");
     });
+
+	AOS.init();
+	
 })(jQuery);

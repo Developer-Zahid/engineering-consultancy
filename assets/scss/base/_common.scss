@@ -27,6 +27,8 @@ body {
 	color: $color-title;
 	font-weight: 400;
 	font-family: $font-primary;
+	background-color: $color-bg;
+	overflow-x: hidden;
 }
 
 a,
@@ -108,17 +110,16 @@ img{
 			}
 			button{
 				font-size: 0;
-				width: toRem(8);
-				height: toRem(8);
-				background: $color-primary;
+				width: toRem(15);
+				height: toRem(15);
+				border-radius: toRem(15);
+				background-color: transparent;
 				border: 1px solid $color-primary;
-				border-radius: toRem(8);
 				@extend %transition;
 			}
 			&.slick-active{
 				button{
-					width: toRem(16);
-					background: transparent;
+					background-color: $color-primary;
 				}
 			}
 		}
@@ -147,13 +148,17 @@ img{
 	}
 
 	&__icon{
+		width: toRem(70);
+		height: toRem(70);
+		background: $color-white;
+		padding: toRem(10);
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	&__title{
-		margin-top: toRem(35);
-		font-size: toRem(26);
+		margin-top: toRem(10);
+		font-size: toRem(40);
 		font-family: $font-primary;
 		font-weight: 700;
 		@include tablet{

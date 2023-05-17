@@ -1,8 +1,13 @@
 /* Footer Section Style */
 .footer{
+    color: $color-white;
     
     &__top{
         background-color: $color-footer;
+        background-image: url('../images/icons/map-pattern.png');
+    }
+    &__bottom{
+        background-color: $color-dark;
     }
 
     &__link{
@@ -17,11 +22,12 @@
         @extend %transition;
     }
 
-    &__address{
-        color: $color-text;
+    &__address{       
+        color: lighten($color-text, $amount: 20);
     }
 
     &__copyright{
+        color: lighten($color-text, $amount: 20);
         font-size: toRem(14);
         &__link{
             @extend %transition;
