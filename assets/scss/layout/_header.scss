@@ -6,6 +6,14 @@
 	@extend %transition;
 
 	.navbar{
+		&-brand__text{
+			font-family: $font-primary;
+			font-weight: 700;
+			@include mobile-xxs{
+				font-size: toRem(16);
+			}
+		}
+
 		&-toggler{
 			font-size: toRem(25);
 			color: $color-text;

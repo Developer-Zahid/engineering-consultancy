@@ -119,6 +119,11 @@ img {
      object-fit: cover;
 }
 
+.object-fit--contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .user-select-none {
   pointer-events: none;
 }
@@ -131,28 +136,6 @@ img {
 }
 
 /* Common Slick Style */
-.slick__arrows {
-  top: 0;
-  position: absolute;
-  z-index: 3;
-  width: 2.5rem;
-  height: 2.5rem;
-  color: unset;
-  background-color: unset;
-  font-size: 1.25rem;
-  text-align: center;
-  cursor: pointer;
-}
-.slick__arrows--left {
-  right: 0;
-}
-.slick__arrows--right {
-  right: 0;
-}
-.slick__arrows:hover, .slick__arrows:focus-visible {
-  color: unset;
-  background-color: unset;
-}
 .slick-dots {
   display: flex;
   justify-content: center;
@@ -168,10 +151,10 @@ img {
   height: 0.9375rem;
   border-radius: 0.9375rem;
   background-color: transparent;
-  border: 1px solid #6FC05B;
+  border: 1px solid #ffffff;
 }
 .slick-dots li.slick-active button {
-  background-color: #6FC05B;
+  background-color: #ffffff;
 }
 
 /* Common Section Gap Style */
@@ -222,7 +205,7 @@ img {
 }
 
 /* Common Transition Style */
-.service-card__header__figure__image, .footer__copyright__link, .footer__link, .header .navbar .nav-link, .header .navbar-toggler, .header, .slick__arrows, .slick-dots li button {
+.service-card__header__figure__image, .footer__copyright__link, .footer__link, .header .navbar .nav-link, .header .navbar-toggler, .header, .slick-dots li button {
   transition: all linear 0.3s;
 }
 
@@ -292,6 +275,15 @@ img {
   position: absolute;
   top: 0;
   z-index: 9;
+}
+.header .navbar-brand__text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+@media (max-width: 479.98px) {
+  .header .navbar-brand__text {
+    font-size: 1rem;
+  }
 }
 .header .navbar-toggler {
   font-size: 1.5625rem;
@@ -445,17 +437,17 @@ img {
 }
 @media (min-width: 768px) {
   .banner__figure__slide__block {
-    padding-top: 25%;
+    padding-top: 30%;
   }
 }
 .banner__content-slider {
   margin-top: -3.125rem;
   -webkit-clip-path: polygon(50px 0, 100% 0, 100% 100%, 0 100%, 0 50px);
           clip-path: polygon(50px 0, 100% 0, 100% 100%, 0 100%, 0 50px);
-  background-image: url("../images/icons/bg-pattern.jpg");
-  background-repeat: repeat;
+  background-color: #6FC05B;
 }
 .banner__content__slide__block {
+  color: #ffffff;
   padding: 3.125rem 1.25rem;
   text-align: center;
 }
@@ -469,6 +461,7 @@ img {
   }
 }
 .banner__text {
+  color: inherit;
   margin-bottom: 0;
   max-width: 37.5rem;
   margin-left: auto;
@@ -546,4 +539,9 @@ img {
 }
 .service-card:hover .service-card__header__figure__image {
   transform: scale(1.1) rotate(1deg);
+}
+
+.partner__item {
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=style.css.map */

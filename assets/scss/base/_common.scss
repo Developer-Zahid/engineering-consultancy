@@ -62,6 +62,11 @@ img{
 	object-fit: cover;
 }
 
+.object-fit--contain{
+	object-fit: contain;
+}
+
+
 .user-select-none{
 	pointer-events: none;
 }
@@ -75,30 +80,6 @@ img{
 
 /* Common Slick Style */
 .slick{
-	&__arrows{
-		top: 0;
-		position: absolute;
-		z-index: 3;
-		width: toRem(40);
-		height: toRem(40);
-		color: unset;
-		background-color: unset;
-		font-size: toRem(20);
-		text-align: center;
-		cursor: pointer;
-		@extend %transition;
-		&--left{
-			right: 0;
-		}
-		&--right{
-			right: 0;
-		}
-		&:hover,
-		&:focus-visible{
-			color: unset;
-			background-color: unset;
-		}
-	}
 	&-dots{
 		display: flex;
 		justify-content: center;
@@ -114,12 +95,12 @@ img{
 				height: toRem(15);
 				border-radius: toRem(15);
 				background-color: transparent;
-				border: 1px solid $color-primary;
+				border: 1px solid $color-white;
 				@extend %transition;
 			}
 			&.slick-active{
 				button{
-					background-color: $color-primary;
+					background-color: $color-white;
 				}
 			}
 		}
