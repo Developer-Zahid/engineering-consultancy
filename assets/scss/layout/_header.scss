@@ -6,11 +6,20 @@
 	@extend %transition;
 
 	.navbar{
-		&-brand__text{
-			font-family: $font-primary;
-			font-weight: 700;
-			@include mobile-xxs{
+		&-brand{
+			display: inline-flex;
+			align-items: center;
+			gap: 10px;
+
+			&__text{
+				font-family: $font-primary;
+				font-weight: 700;
 				font-size: toRem(16);
+				margin-top: 10px;
+
+				@include tablet{
+					display: none;
+				}
 			}
 		}
 

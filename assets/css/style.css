@@ -276,13 +276,20 @@ img {
   top: 0;
   z-index: 9;
 }
+.header .navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
 .header .navbar-brand__text {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
+  font-size: 1rem;
+  margin-top: 10px;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 767.98px) {
   .header .navbar-brand__text {
-    font-size: 1rem;
+    display: none;
   }
 }
 .header .navbar-toggler {
@@ -437,7 +444,7 @@ img {
 }
 @media (min-width: 768px) {
   .banner__figure__slide__block {
-    padding-top: 30%;
+    padding-top: 40%;
   }
 }
 .banner__content-slider {
@@ -497,9 +504,11 @@ img {
 .service-card__header__top {
   position: relative;
   color: #ffffff;
-  background-color: #6FC05B;
-  background-image: linear-gradient(45deg, #6FC05B, #A4CF59);
-  padding: 3.75rem 15px;
+  background-color: #ffffff;
+  background-image: url("../images/services/service-image-bg.png");
+  padding-top: 9.0625rem;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .service-card__header__top::after {
   content: "";
@@ -512,10 +521,6 @@ img {
   border-right: 0.9375rem solid transparent;
   z-index: 1;
 }
-.service-card__header__title {
-  font-weight: 700;
-  text-transform: uppercase;
-}
 .service-card__header__sub-title {
   font-size: 1.625rem;
   font-weight: 900;
@@ -524,6 +529,7 @@ img {
   position: relative;
   padding-top: 100%;
   overflow: hidden;
+  background-color: #6FC05B;
 }
 .service-card__body {
   padding: 1.875rem 0.9375rem;
@@ -536,6 +542,9 @@ img {
 }
 .service-card__body__texr {
   font-size: 0.875rem;
+}
+.service-card__body__texr a {
+  color: #6FC05B;
 }
 .service-card:hover .service-card__header__figure__image {
   transform: scale(1.1) rotate(1deg);

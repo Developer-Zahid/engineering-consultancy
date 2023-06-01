@@ -4,9 +4,11 @@
             &__top{
                 position: relative;
                 color: $color-white;
-                background-color: $color-primary;
-                background-image: linear-gradient(45deg, $color-primary, $color-secondary);
-                padding: toRem(60) 15px;
+                background-color: $color-white;
+                background-image: url('../images/services/service-image-bg.png');
+                padding-top: toRem(145);
+                background-size: contain;
+                background-repeat: no-repeat;
 
                 &::after{
                     $size: toRem(15);
@@ -22,11 +24,6 @@
                 }
             }
 
-            &__title{
-                font-weight: 700;
-                text-transform: uppercase;
-            }
-
             &__sub-title{
                 font-size: toRem(26);
                 font-weight: 900;
@@ -36,6 +33,7 @@
                 position: relative;
                 padding-top: 100%;
                 overflow: hidden;
+                background-color: $color-primary;
 
                 &__image{
                     @extend %full-width;
@@ -56,6 +54,10 @@
 
             &__texr{
                 font-size: toRem(14);
+
+                a{
+                    color: $color-primary;
+                }
             }
         }
 
